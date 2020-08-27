@@ -6,7 +6,7 @@ git clone "https://github.com/AnushaNath/assessment-nodejs.git"
 ### to get node-modules 
 npm i   
 
-### Transpile server.ts
+### to transpile server.ts
 tsc server.ts
 
 ### to start the server
@@ -16,7 +16,7 @@ nodemon server.js
 
 Run in Postman
 
-### POST the request to http://localhost:3000/api/v1/parse
+### POST the request using endpoint url /api/v1/parse
 
 { 
 	"data": "JOHN0000MICHAEL0009994567"
@@ -37,7 +37,7 @@ Run in Postman
     }
 }
 
-### POST the request to http://localhost:3000/api/v2/parse
+### POST the request using endpoint url /api/v2/parse
 
 { 
 	"data": "JOHN0000MICHAEL0009994567"
