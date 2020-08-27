@@ -1,4 +1,4 @@
-Steps to run this application
+# Steps to run this application
 
 ### to clone project 
 git clone "https://github.com/AnushaNath/assessment-nodejs.git" 
