@@ -57,3 +57,7 @@ Run in Postman
         "statusCode": 200
     }
 }
+
+### Diagonostic Report
+
+report.json 
