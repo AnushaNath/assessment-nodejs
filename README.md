@@ -1,30 +1,29 @@
-# assessment-nodejs
 Steps to run this application
 
-# to clone project 
+### to clone project 
 git clone "https://github.com/AnushaNath/assessment-nodejs.git" 
 
-# to get node-modules 
+### to get node-modules 
 npm i   
 
-# Transpile server.ts
+### Transpile server.ts
 tsc server.ts
 
-# to start the server
+### to start the server
 nodemon server.js
 
 ######## To test the App ########
 
 Run in Postman
 
-# POST the request to http://localhost:3000/api/v1/parse
+### POST the request to http://localhost:3000/api/v1/parse
 
 { 
 	"data": "JOHN0000MICHAEL0009994567"
 	
 }
 
-# Response
+### Response
 
 {
     "result": {
@@ -38,14 +37,14 @@ Run in Postman
     }
 }
 
-# POST the request to http://localhost:3000/api/v2/parse
+### POST the request to http://localhost:3000/api/v2/parse
 
 { 
 	"data": "JOHN0000MICHAEL0009994567"
 	
 }
 
-# Response
+### Response
 
 {
     "result": {
