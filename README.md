@@ -10,7 +10,7 @@ npm i
 tsc server.ts
 
 ### to start the server
-nodemon server.js
+nodemon server.js OR npm start
 
 ######## To test the App ########
 
