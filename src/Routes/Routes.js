@@ -22,7 +22,7 @@ var Routes = /** @class */ (function () {
             .post(function (req, res) {
             var result = {};
             _this.v1Controller.parse(req, result);
-            res.status(200).send({
+            res.status(res.statusCode).send({
                 result: result
             });
         });
@@ -30,7 +30,7 @@ var Routes = /** @class */ (function () {
             .post(function (req, res) {
             var result = {};
             _this.v2Controller.parse(req, result);
-            res.status(200).send({
+            res.status(res.statusCode).send({
                 result: result
             });
         });

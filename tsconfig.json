@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-      "module": "system",
+      "module": "commonjs",
       "target": "es6",
       "moduleResolution": "node",
       "sourceMap": true,
-      "types": ["node", "jest"],
+      "types": ["node", "jest", "supertest"],
       "allowSyntheticDefaultImports": true,
       "typeRoots": [
         "node_modules/@types"

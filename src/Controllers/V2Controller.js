@@ -6,7 +6,6 @@ var V2Controller = /** @class */ (function () {
     function V2Controller() {
     }
     V2Controller.prototype.parse = function (req, res) {
-        console.log("req.body.data", req.body.data);
         if (!req.body.data || req.body.data.length <= 0) {
             res.data = null;
             res.message = "Input text cannot be blank";
@@ -20,9 +19,7 @@ var V2Controller = /** @class */ (function () {
             return;
         }
         var v2Handler = new V2Handler_1["default"]();
-        console.log("Data " + req.body.data);
         var data = v2Handler.Handle(req.body.data || "");
-        console.log("Controller " + data);
         res.data = data;
         res.message = "Success";
         res.statusCode = 200;

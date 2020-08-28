@@ -18,8 +18,11 @@ class App {
         this.app.use(bodyParser.urlencoded({ extended: false }));
     }
 
+    public getServer() {
+        return this.app;
+    }
+    
+
 }
 
-export default new App().app;
-
-//export default App;
+export default App;

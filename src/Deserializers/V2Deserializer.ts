@@ -1,8 +1,6 @@
-//Logic for V2
 import Data from "../Model/data";
 import DeserializerBase from './DeserializerBase';
 
-//Logic for V1
 export default class V2Deserializer extends DeserializerBase{
 
     public Deserialize (msg: string): Data{

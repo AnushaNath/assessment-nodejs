@@ -4,7 +4,6 @@ import { V1Controller } from "../Controllers/V1Controller";
 import { V2Controller } from "../Controllers/V2Controller";
 import IndexController from '../Controllers/IndexController';
 import Result from './../Model/Result';
-import Data from '../Model/data';
 
 export default class Routes {  
 
@@ -21,13 +20,13 @@ export default class Routes {
         this.router.get(`${this.path}`, this.indexController.index);
       }
     
-    public routes(app): void {          
-        
+    public routes(app): void {      
+                
         app.route('/api/v1/parse')
         .post((req: Request, res: Response) => {  
             let result: Result = {} as Result;
             this.v1Controller.parse(req, result)  
-            res.status(200).send({
+            res.status(res.statusCode).send({
                 result : result
             })
         })
@@ -36,7 +35,7 @@ export default class Routes {
         .post((req: Request, res: Response) => {  
             let result: Result = {} as Result;
             this.v2Controller.parse(req, result)  
-            res.status(200).send({
+            res.status(res.statusCode).send({
                 result : result
             })
         })

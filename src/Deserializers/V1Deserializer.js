@@ -14,7 +14,6 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var DeserializerBase_1 = require("./DeserializerBase");
-//Logic for V1
 var V1Deserializer = /** @class */ (function (_super) {
     __extends(V1Deserializer, _super);
     function V1Deserializer() {
