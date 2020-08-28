@@ -61,3 +61,9 @@ Run in Postman
 ### Diagonostic Report
 
 report.json 
+
+### Unit Testing
+
+Navigate to src/Tests
+tsc Routes.test.ts
+npm test
